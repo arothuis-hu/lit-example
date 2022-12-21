@@ -10,10 +10,11 @@ see: [.github/workflows/deploy.yml](/.github/workflows/deploy.yml)
 It is possible to change this to run once something has been pushed 
 to a certain branch (e.g. `main` or `release`).
 
-## Vitejs
+## Vite
 We have emptied our build configuration in [vite.config.js](/vite.config.js) 
 because we're not building a library (remove the `lib` property)
-and we include our build dependencies in our JS package (remove the `rollup.external` property).
+and we include our build dependencies in our JS package 
+(remove the `rollupOptions.external` property).
 Note that this increases the JS bundle size greatly.
 
 ## Base path
