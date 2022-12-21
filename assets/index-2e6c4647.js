@@ -69,7 +69,7 @@ var _t=Object.defineProperty;var vt=(n,e,t)=>e in n?_t(n,e,{enumerable:!0,config
         `}static get styles(){return ee`
             :host {
                 display: block;
-                max-width: var(--width-container);
+                max-width: var(--width-inner);
                 padding: 1rem 2rem;
                 margin: 0 auto;
             }
