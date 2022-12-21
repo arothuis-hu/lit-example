@@ -5,6 +5,8 @@ Using Lit Element, Vaadin Router and Github Pages
 We're using Github Actions so we can get a button to manually deploy,
 see: [.github/workflows/deploy.yml](/.github/workflows/deploy.yml)
 
+![Run workflow example](/run-workflow-example.png)
+
 It is possible to change this to run once something has been pushed 
 to a certain branch (e.g. `main` or `release`).
 
