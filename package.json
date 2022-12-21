@@ -1,0 +1,25 @@
+{
+  "name": "hu-test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "dist/app.mjs",
+  "exports": {
+    ".": "./dist/app.mjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vaadin/router": "^1.7.4",
+    "lit": "^2.4.1"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0"
+  }
+}
