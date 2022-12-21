@@ -1,6 +1,6 @@
 # See: https://docs.github.com/en/actions
 # To get started: https://docs.github.com/en/actions/quickstart
-name: Deploy GitHub Pages
+name: Deploy Github Pages
 
 # Run the following jobs on a manual dispatch
 on: [workflow_dispatch]
@@ -22,6 +22,10 @@ jobs:
 
       - name: Build project with Vite
         run: npm run build
+
+      # Fix URL routing in Github Pages
+      - name: Copy index.html to 404.html
+        run: cp dist/index.html dist/404.html
 
       # Deploy the resulting dist dir
       # This does not use the manual deploy-pages scripts

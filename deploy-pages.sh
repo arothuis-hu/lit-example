@@ -10,6 +10,10 @@ npm run build
 # navigate into the build output directory
 cd dist
 
+# copy index.html to 404.html
+# to fix routing via URLs
+cp index.html 404.html
+
 # place .nojekyll to bypass Jekyll processing
 echo > .nojekyll
 

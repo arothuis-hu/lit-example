@@ -21,8 +21,18 @@ Note that this increases the JS bundle size greatly.
 Note that we had to set the correct base path in [vite.config.js](/vite.config.js)
 and in our [index.html](/index.html) via a `<base>` element.
 
-Assets are put into `/public` so both `npm run dev` and `npm run build` 
-work as expected.
+Assets are put into `/public`, which Vite will take as root,
+ so both `npm run dev` and `npm run build` work as expected.
+
+## URL fix
+Github pages only loads `index.html` when we visit the `/` path
+as seen from the basepath. It will refer to a `404.html` 
+when a route cannot be found, which is why we cannot navigate 
+directly to URLs -- even though the URL seems correct!
+
+The fix (or: *hack*) for this is to copy `index.html` to `404.html`
+when building our package. This way, our Vaadin Router will always
+deal with our URL handling, not Github Pages.
 
 ## Result
 The result can be found here:

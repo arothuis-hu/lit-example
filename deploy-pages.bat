@@ -7,6 +7,10 @@ call npm run build
 @REM Navigate to output directory
 cd dist
 
+@REM Copy index.html to 404.html
+@REM to fix routing via URLs
+call xcopy index.html 404.html*
+
 @REM Bypass Jekyll processing in GitHub
 echo > .nojekyll
 
