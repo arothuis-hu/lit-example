@@ -18,7 +18,7 @@ class HuLoginPage extends LitElement {
         return css`
             :host {
                 display: block;
-                max-width: var(--width-container);
+                max-width: var(--width-inner);
                 padding: 1rem 2rem;
                 margin: 0 auto;
             }
