@@ -9,15 +9,11 @@ class HuPage extends LitElement {
         super();
     }
 
-    onBeforeEnter() {
-        console.log("PAGE!");
-    }
-
     render() {
         return html`
             <hu-nav-bar>
                 <hu-nav-item to="">Home</hu-nav-item>
-                <hu-nav-item to="about">About</hu-nav-item>
+                <hu-nav-item to="notes">Notes</hu-nav-item>
                 <hu-nav-item to="login">Login</hu-nav-item>
             </hu-nav-bar>
 

@@ -1,7 +1,5 @@
 import { LitElement, css, html } from "lit";
 
-import "../layouts/hu-page";
-
 class HuLoginPage extends LitElement {
     constructor() {
         super();
