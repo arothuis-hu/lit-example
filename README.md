@@ -34,6 +34,8 @@ The fix (or: *hack*) for this is to copy `index.html` to `404.html`
 when building our package. This way, our Vaadin Router will always
 deal with our URL handling, not Github Pages.
 
+:warning: *Note that this is not ideal as we still get 404 status codes*
+
 ## Result
 The result can be found here:
 https://arothuis-hu.github.io/lit-example/
